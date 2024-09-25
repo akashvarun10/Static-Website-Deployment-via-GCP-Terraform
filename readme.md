@@ -56,9 +56,6 @@ terraform init
 terraform plan
 terraform apply
 ```
-Here’s an example of Terraform's output:
-
-![Terraform Output](assets/tf_output.png)
 
 ### 5. Verifying Website Deployment
 
