@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Links App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            text-align: center;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .social-links a {
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            background-color: #555;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .social-links a:hover {
+            background-color: #333;
+        }
+
+        /* Social media specific colors */
+        .github {
+            background-color: #3b5998;
+        }
+
+        .twitter {
+            background-color: #1da1f2;
+        }
+
+        .scholar {
+            background-color: #e1306c;
+        }
+
+        .linkedin {
+            background-color: #0077b5;
+        }
+
+        /* Responsive design */
+        @media (max-width: 600px) {
+            .social-links {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Akash Varun </h1>
+        <div class="social-links">
+            <a href="https://github.com/akashvarun10/" class="github" target="_blank">Github</a>
+            <a href="https://www.x.com/akashvarunp" class="twitter" target="_blank">Twitter</a>
+            <a href="https://scholar.google.co.in/citations?user=1ebWnUQAAAAJ&hl=en&authuser=1" class="scholar" target="_blank">Google Scholar</a>
+            <a href="https://www.linkedin.com/in/akash9varun/" class="linkedin" target="_blank">LinkedIn</a>
+        </div>
+    </div>
+
+</body>
+</html>
