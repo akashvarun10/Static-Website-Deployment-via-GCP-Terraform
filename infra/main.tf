@@ -53,6 +53,14 @@ resource "google_compute_backend_bucket" "website-backend" {
     enable_cdn = true
 }
 
+# Create HTTPS certificate
+resource "google_compute_managed_ssl_certificate" "website" {
+  provider = google-beta
+  name     = "website-cert"
+  managed {
+    domains = [google_dns_record_set.website.name]
+  }
+}
 
 # # GCP URL MAP
 resource "google_compute_url_map" "website" {
